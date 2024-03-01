@@ -5,6 +5,7 @@ import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -27,7 +28,12 @@ class MainActivity : AppCompatActivity() {
 
         buttonSwitchActivity.setOnClickListener {
             // Cambiar a Activity 2
-            val intent = Intent(this, Activity2::class.java)
+            val editTextMessage = findViewById<EditText>(R.id.editText)
+            val message = editTextMessage.text.toString()
+
+            val intent = Intent(this, Activity2::class.java).apply {
+                putExtra("message", message)
+            }
             startActivity(intent)
         }
     }
