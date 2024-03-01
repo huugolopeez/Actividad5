@@ -27,6 +27,15 @@
             android:height="70dp"
             android:text="Cambiar Color de Fondo" />
 
+        <EditText
+            android:id="@+id/editText"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrincipal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
         <Button
             android:id="@+id/buttonSwitchActivity"
             android:layout_width="150dp"
