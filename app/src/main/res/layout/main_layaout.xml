@@ -9,7 +9,7 @@
     <LinearLayout
         android:id="@+id/container"
         android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_height="350dp"
         android:background="@color/colorCuerpo"
         android:orientation="vertical"
         android:gravity="center_vertical"
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrincipal"
             android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/buttonSwitchActivity"
