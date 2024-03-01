@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         val buttonChangeColor = findViewById<Button>(R.id.buttonChangeColor)
         val buttonSwitchActivity = findViewById<Button>(R.id.buttonSwitchActivity)
+        val buttonGoToLogin = findViewById<Button>(R.id.buttonGoToLogin)
 
         buttonChangeColor.setOnClickListener {
             // Cambiar el color de fondo del cuerpo
@@ -34,6 +35,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Activity2::class.java).apply {
                 putExtra("message", message)
             }
+            startActivity(intent)
+        }
+
+        buttonGoToLogin.setOnClickListener {
+            val intent = Intent(this, AuthActivity::class.java)
             startActivity(intent)
         }
     }
